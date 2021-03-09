@@ -3,7 +3,7 @@
 MACHINE DE MOORE - FEU ROUGE
 
 ```vhdl
-- Company: 
+-- Company: 
 -- Engineer: 
 -- 
 -- Create Date:    06:57:05 03/08/2021 
