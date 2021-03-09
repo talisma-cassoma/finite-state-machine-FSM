@@ -1,5 +1,11 @@
 # machine-a-etat-fini-vhdl
 
+Une machine à état finis est une machine séquentielle algorithmique caractérisée par un vecteur d’entrées,
+un vecteur de sorties, et une séquence d’états définissant son comportement. La machine (également appelée
+automate) va passer d’un état à l’autre suivant les séquences d’entrée qu’elle reçoit. On attribue généralement
+à la machine un état de départ lui permettant de débuter son fonctionnement à partir d’un point fixe.
+
+
 MACHINE DE MOORE - FEU ROUGE
 
 ```vhdl
