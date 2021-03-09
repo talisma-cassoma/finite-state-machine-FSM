@@ -1,5 +1,7 @@
 # machine-a-etat-fini-vhdl
 
+MACHINE DE MOORE - FEU ROUGE
+
 ```vhdl
 - Company: 
 -- Engineer: 
