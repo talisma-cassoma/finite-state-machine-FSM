@@ -1,4 +1,4 @@
-# machine-a-etat-fini-vhdl
+# machine a etat fini[code en VHDL]
 
 Une machine à état finis est une machine séquentielle algorithmique caractérisée par un vecteur d’entrées,
 un vecteur de sorties, et une séquence d’états définissant son comportement. La machine (également appelée
