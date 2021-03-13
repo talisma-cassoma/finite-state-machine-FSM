@@ -173,7 +173,35 @@ end Behavioral;
 
 
 ```
-oyyyyyyyyyyyyyyyyy
+**Cahier de charge.**
+
+Dans un distributeur de boissons on a 3 boutons qui commandent 3 électrovannes branchées à
+3 cuves contenant des liquides (eau, cassis, menthe).
+Le distributeur permet d'obtenir 3 boissons :
+
+- E : eau
+- C : cassis
+- M : menthe
+
+Si l'on veut un mélange, on appuie sur 2 boutons simultanément (e et c) ou (e et m) et on
+introduit une pièce (p).
+
+➢ Tous les autres mélanges sont interdits.
+➢ L'eau est gratuite.
+
+Pour toute fausse manœuvre (mélange interdit ou eau seule) la pièce est restituée.
+
+- P : pièce restituée.
+
+**Question**
+1. Donner la fonction logique de E, C, M et P en fonctions de e1, c1, m1 et p1.
+2. Dresser la table de karnaugh des quatre Fonction Logique E, C, M et P.
+3. Donner les fonction logiques simplifiées.
+4. Dessiner les logigrammes des fonctions logiques E, C, M et P.
+5. Créer en VHDL et implémenter sur la carte FPGA une entité représentant les fonctions
+logique simplifiées en utilisant un traitement de flots de données.
+6. Créer en VHDL et implémenter sur la carte FPGA une entité représentant les fonctions
+logique simplifiées en utilisant une description comportementale.
 
 
 ```vhdl
