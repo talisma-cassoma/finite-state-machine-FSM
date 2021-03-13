@@ -173,3 +173,126 @@ end Behavioral;
 
 
 ```
+oyyyyyyyyyyyyyyyyy
+
+
+```vhdl
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    14:03:53 01/17/2021 
+-- Design Name: 
+-- Module Name:    M_COMP - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+--arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity M_COMP is
+    Port ( E  : in  STD_LOGIC_VECTOR (3 downto 0);
+           P0 : out  STD_LOGIC;
+           E0 : out  STD_LOGIC;
+           M0 : out  STD_LOGIC;
+           C0 : out  STD_LOGIC);
+end M_COMP;
+
+architecture Behavioral of M_COMP is
+
+begin
+-------------------------**Instruction when**-----------------------------------------------------------														
+--******************************--- Sortie P0---**********************************---						
+						--P0 <= '1' when (E="1011" or E="1100" or E="1111")
+						  --  else '0';
+--******************************--- Sortie E0---**********************************---
+					--	E0 <= '1' when (E= "0100" OR E="1110" or E="1100" or E="1101")
+						--    else '0';
+--******************************--- Sortie M0---**********************************---							 
+						--M0 <= '1' when (E= "1010" OR E="1110")
+						 --   else '0';
+--******************************--- Sortie C0---**********************************---							 
+						--C0 <= '1' when (E= "1001" OR E="1101")
+						--    else '0';						
+-------------------------**Instruction WITH SELECT**-----------------------------------------------------------
+							--WITH E SELECT
+								--P0 <= '1' WHEN "1011"|"1100"|"1111",
+							  -- '0' WHEN OTHERS;
+							--WITH E SELECT
+								--E0 <= '1' WHEN "0100"|"1110"|"1100"|"1101",
+							  -- '0' WHEN OTHERS;
+							--WITH E SELECT
+							--	M0 <= '1' WHEN "1010"|"1110",
+							 --  '0' WHEN OTHERS;
+							--WITH E SELECT
+							--	C0 <= '1' WHEN "1001"|"1101",
+							 --  '0' WHEN OTHERS;
+-------------------------**Instruction CASE**-----------------------------------------------------------
+	PRO : process (E)
+						BEGIN
+--******************************--- Sortie P0---**********************************---
+							CASE E is
+									when "1011"|"1100"|"1111" => P0 <='1'; 
+									when others => P0 <= '0'; 
+							end case;
+--******************************--- Sortie E0---**********************************---
+							CASE E is
+								 WHEN "0100"|"1110"|"1100"|"1101" => E0 <='1'; 
+								 when others => E0 <= '0'; 
+							end case;		
+--******************************---Sortie M0---**********************************---
+							CASE E is 
+								WHEN "1010"|"1110" => M0 <='1'; 
+								when others => M0 <= '0';
+							end case;
+--******************************---Sortie C0---**********************************---
+							CASE E is 
+								WHEN "1001"|"1101" => C0 <='1'; 
+								when others => C0 <= '0';
+							end case;
+							end process;
+------------------------------------------------------------------------------------------------------------*/----
+-------------------------**Instruction IF**-----------------------------------------------------------
+					--PRO : process (E)
+						--   BEGIN	
+--******************************--- Sortie P0---**********************************---
+						--		if (E="1011" or E="1100" or E="1111") then P0 <='1';
+							--	else P0 <='0';
+						--		end if;
+--******************************--- Sortie E0---**********************************---
+			--					if (E= "0100" OR E="1110" or E="1100" or E="1101") then E0 <='1';
+				--				else E0 <='0';
+						--		end if;
+--******************************--- Sortie M0---**********************************---
+					--			if (E= "1010" OR E="1110") then M0 <='1';
+						--		else M0 <='0';
+						--		end if;
+--******************************--- Sortie C0---**********************************---
+							--	if (E= "1001" OR E="1101") then C0 <='1';
+				--				else C0 <='0';
+					--			end if;
+					--	end process;
+------------------------------------------------------------------------------------------------------------*
+
+
+
+end Behavioral;
+```
