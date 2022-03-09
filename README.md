@@ -5,7 +5,7 @@ un vecteur de sorties, et une séquence d’états définissant son comportement
 automate) va passer d’un état à l’autre suivant les séquences d’entrée qu’elle reçoit. On attribue généralement
 à la machine un état de départ lui permettant de débuter son fonctionnement à partir d’un point fixe.
 
-cette algorithme applique les concept de machine de moore:  
+cet algorithme applique les concept de machine de moore:  
 
 
 MACHINE DE MOORE - FEU ROUGE
