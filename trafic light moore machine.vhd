@@ -5,7 +5,7 @@
 -- Design Name: 
 -- Module Name:    FEU_ROUGE - Behavioral 
 -- Project Name:   FEU_ROUGE
--- Target Devices: 
+-- Target Devices: Arty Z7-20
 -- Tool versions: 
 -- Description: 
 --
