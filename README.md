@@ -11,7 +11,7 @@ cet algorithme applique les concept de machine de moore:
 MACHINE DE MOORE - FEU ROUGE
 
 ```vhdl
--- Company: 
+-- Company:        UNIVERSITY IBIN TOFAIL
 -- Engineer: 
 -- 
 -- Create Date:    06:57:05 03/08/2021 
